@@ -1,0 +1,53 @@
+<EditForm OnValidSubmit="@OnValidSubmit" OnInvalidSubmit="@OnInvalidSubmit" Model="@starship">
+  <DataAnnotationsValidator></DataAnnotationsValidator>
+
+  <p>
+    <label>
+      Identifier:
+      <InputText @bind-Value="starship.Identifier" DisplayName="ID"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      Description (optional):
+      <InputTextArea @bind-Value="starship.Description" DisplayName="描述"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      Primary Classification:
+      <InputSelect @bind-Value="starship.Classification" DisplayName="分类">
+        <option value="">Select classification ...</option>
+        <option value="Exploration">Exploration</option>
+        <option value="Diplomacy">Diplomacy</option>
+        <option value="Defense">Defense</option>
+      </InputSelect>
+    </label>
+  </p>
+  <p>
+    <label>
+      Maximum Accommodation:
+      <Microsoft.AspNetCore.Components.Forms.InputNumber DisplayName="最多容量" @bind-Value="starship.MaximumAccommodation"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      Engineering Approval:
+      <InputCheckbox @bind-Value="starship.IsValidatedDesign" DisplayName="工程审批"/>
+    </label>
+  </p>
+  <p>
+    <label>
+      Production Date:
+      <InputDate @bind-Value="starship.ProductionDate" DisplayName="生产日期" ParsingErrorMessage="日期格式错误: {0}"/>
+    </label>
+  </p>
+
+  <div>
+    <button type="submit">SUBMIT</button>
+  </div>
+
+  <div>
+    <ValidationSummary></ValidationSummary>
+  </div>
+</EditForm>

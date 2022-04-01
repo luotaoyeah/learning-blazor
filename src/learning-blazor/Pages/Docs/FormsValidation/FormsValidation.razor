@@ -1,0 +1,9 @@
+<EditForm OnSubmit="@OnSubmit" EditContext="@editContext">
+  <DataAnnotationsValidator></DataAnnotationsValidator>
+
+  <InputText @bind-Value="@exampleModel.Name"></InputText>
+
+  <button type="submit">SUBMIT</button>
+
+  <ValidationSummary></ValidationSummary>
+</EditForm>

@@ -1,0 +1,13 @@
+﻿@* layout 组件需要继承 LayoutComponentBase 基类 *@
+@inherits LayoutComponentBase;
+
+@* layout 组件可以指定自己的 layout, 即 layout 组件可以嵌套 *@
+@layout MainLayout;
+
+<fieldset>
+  <legend>LAYOUT 01</legend>
+
+  <div>@@Body 属性用来指定嵌套组件的插入位置.</div>
+
+  @Body
+</fieldset>

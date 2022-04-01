@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learning-blazor", "src\learning-blazor\learning-blazor.csproj", "{BDF76CDE-368A-4F0D-AE91-2BDC8A7BD5FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learning-blazor-lib", "src\learning-blazor-lib\learning-blazor-lib.csproj", "{FCAC9AA9-18ED-45D3-9D54-2223460899EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{44E63F53-64EE-4144-9528-82AC7B2AD2BA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+		global.json = global.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6C08C4AC-B649-4955-A61A-E0D00014EA60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDF76CDE-368A-4F0D-AE91-2BDC8A7BD5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF76CDE-368A-4F0D-AE91-2BDC8A7BD5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF76CDE-368A-4F0D-AE91-2BDC8A7BD5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF76CDE-368A-4F0D-AE91-2BDC8A7BD5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCAC9AA9-18ED-45D3-9D54-2223460899EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCAC9AA9-18ED-45D3-9D54-2223460899EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCAC9AA9-18ED-45D3-9D54-2223460899EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCAC9AA9-18ED-45D3-9D54-2223460899EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDF76CDE-368A-4F0D-AE91-2BDC8A7BD5FA} = {6C08C4AC-B649-4955-A61A-E0D00014EA60}
+		{FCAC9AA9-18ED-45D3-9D54-2223460899EA} = {6C08C4AC-B649-4955-A61A-E0D00014EA60}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  learning-blazor:
+    image: registry.cn-hangzhou.aliyuncs.com/luotaoyeah/learning-blazor
+    build:
+      context: ./
+      dockerfile: src/learning-blazor/Dockerfile
+    ports:
+      - "6001:80"
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-CU13-ubuntu-20.04
+    environment:
+      - SA_PASSWORD=Pass@w0rd
+      - ACCEPT_EULA=Y
+    ports:
+      - "6433:1433"

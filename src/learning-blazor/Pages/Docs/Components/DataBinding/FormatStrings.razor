@@ -1,0 +1,8 @@
+<fieldset>
+  <div>
+    如果绑定的属性的类型是 DateTime, 则可以通过 @@bind:format="{FORMAT STRING}" 指定日期格式.
+  </div>
+
+  <input style="width:100%;" @bind="@inputValue" @bind:format="yyyy-MM-dd HH:mm:ss.fff">
+  <div>@(inputValue?.ToString("yyyy-MM-dd HH:mm:ss.fff") ?? "NULL")</div>
+</fieldset>
